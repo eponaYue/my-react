@@ -1,0 +1,64 @@
+@mainColor: #c6ad8e;
+@secColor: #8f6d3f;
+@menuMainBg: #1d2e5a;
+@subMenuBg: #3a4570;
+@menuSelectBg: #6d6f7b;
+.sider-area {
+  .ant-menu {
+    height: 100%;
+    background: @menuMainBg;
+    color: @mainColor;
+  }
+  .ant-menu-item>a {
+    color: @mainColor;
+  }
+  .ant-menu-submenu>.ant-menu {
+    background: @subMenuBg;
+  }
+  .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    color: @mainColor; // background-color: @menuSelectBg;
+    background-color: transparent;
+    filter: brightness(150%);
+  }
+  .ant-menu-item:hover,
+  .ant-menu-item-active,
+  .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+  .ant-menu-submenu-active,
+  .ant-menu-submenu-title:hover,
+  .ant-menu-item>a:hover {
+    color: @mainColor;
+    filter: brightness(120%);
+  }
+  .ant-menu-submenu-vertical>.ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after,
+  .ant-menu-submenu-vertical-left>.ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after,
+  .ant-menu-submenu-vertical-right>.ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after,
+  .ant-menu-submenu-inline>.ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after,
+  .ant-menu-submenu-vertical>.ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before,
+  .ant-menu-submenu-vertical-left>.ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before,
+  .ant-menu-submenu-vertical-right>.ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before,
+  .ant-menu-submenu-inline>.ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before {
+    background-image: -webkit-gradient(linear, left top, right top, @secColor, @mainColor);
+    background-image: -webkit-linear-gradient(left, @secColor, @mainColor);
+    background-image: linear-gradient(to right, @secColor, @mainColor);
+  }
+  .ant-menu-submenu-vertical>.ant-menu-submenu-title .ant-menu-submenu-arrow::before,
+  .ant-menu-submenu-vertical-left>.ant-menu-submenu-title .ant-menu-submenu-arrow::before,
+  .ant-menu-submenu-vertical-right>.ant-menu-submenu-title .ant-menu-submenu-arrow::before,
+  .ant-menu-submenu-inline>.ant-menu-submenu-title .ant-menu-submenu-arrow::before,
+  .ant-menu-submenu-vertical>.ant-menu-submenu-title .ant-menu-submenu-arrow::after,
+  .ant-menu-submenu-vertical-left>.ant-menu-submenu-title .ant-menu-submenu-arrow::after,
+  .ant-menu-submenu-vertical-right>.ant-menu-submenu-title .ant-menu-submenu-arrow::after,
+  .ant-menu-submenu-inline>.ant-menu-submenu-title .ant-menu-submenu-arrow::after {
+    background-image: -webkit-gradient(linear, left top, right top, @secColor, @mainColor);
+    background-image: -webkit-linear-gradient(left, @secColor, @mainColor);
+    background-image: linear-gradient(to right, @secColor, @mainColor);
+    background: linear-gradient(to right, @secColor, @mainColor);
+  }
+  .ant-menu-vertical .ant-menu-item::after,
+  .ant-menu-vertical-left .ant-menu-item::after,
+  .ant-menu-vertical-right .ant-menu-item::after,
+  .ant-menu-inline .ant-menu-item::after {
+    // border-right: 3px solid @mainColor;
+    border-right: none;
+  }
+}

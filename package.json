@@ -3,9 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "antd": "^3.23.6",
+    "coordtransform": "^2.1.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "react-scripts": "3.2.0"
+    "react-jw-player": "^1.19.0",
+    "react-load-script": "^0.0.6",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "video.js": "^7.6.5",
+    "videojs-flash": "^2.2.1"
   },
   "scripts": {
     "start": "react-scripts start",

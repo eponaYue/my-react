@@ -1,0 +1,25 @@
+@import '~antd/dist/antd.css';
+.ant-layout {
+  @headerHeight: 48px;
+  @footerHeight: 25px;
+  @contentHeight: calc(100% - @headerHeight - @footerHeight);
+  @layoutBg: #fffbf0;
+  @layoutColor: #a2998d;
+  background: #ccc;
+  .ant-layout-header {
+    height: @headerHeight;
+    line-height: @headerHeight;
+    color: @layoutColor;
+    background: @layoutBg;
+  }
+  .ant-layout-footer {
+    height: @footerHeight;
+    line-height: @footerHeight;
+    padding: 0;
+    color: @layoutColor;
+    background: @layoutBg;
+  }
+  .ant-layout-content {
+    height: @contentHeight;
+  }
+}
