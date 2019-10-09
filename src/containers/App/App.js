@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Layout } from 'antd';
-import SiderMenu from '../../components/Menu';
+import SiderMenu from '../../components/Menu'; // 菜单
 import Bdnet from '../Map/Bdnet';
 import Gdnet from '../Map/Gdnet';
 import { FormIn } from '../DataInput';
 import { VideoRTM } from '../RTM';
+import FabricJS from '../Fabric';
 import './App.less';
 
 const { Header, Content, Footer } = Layout;
@@ -14,6 +15,7 @@ const routerData = [
   { path: '/map/netGD', component: Gdnet },
   { path: '/dataInput/formIn', component: FormIn },
   { path: '/RTM/rtm-video', component: VideoRTM },
+  { path: '/FabricJS', component: FabricJS },
 ];
 
 function getRouterConfig() {
