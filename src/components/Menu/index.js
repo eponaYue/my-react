@@ -85,6 +85,12 @@ const menuData = [
     icon: <Icon type="highlight" />,
     path: '/FabricJS'
   },
+  {
+    name: '练习测试区',
+    key: 'TestArea',
+    // icon: <Icon type="highlight" />,
+    path: '/TestArea'
+  },
 ];
 const getMenuData = (itemData) => {
   const title = itemData.icon ? <span><span>{itemData.icon}</span><span>{itemData.name}</span></span> : itemData.name;

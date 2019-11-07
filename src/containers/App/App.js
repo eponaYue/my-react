@@ -7,6 +7,7 @@ import Gdnet from '../Map/Gdnet';
 import { FormIn } from '../DataInput';
 import { VideoRTM } from '../RTM';
 import FabricJS from '../Fabric';
+// import { TestJS } from '../ReactApi';
 import './App.less';
 
 const { Header, Content, Footer } = Layout;
@@ -16,6 +17,7 @@ const routerData = [
   { path: '/dataInput/formIn', component: FormIn },
   { path: '/RTM/rtm-video', component: VideoRTM },
   { path: '/FabricJS', component: FabricJS },
+  // { path: '/TestArea', component: TestJS },
 ];
 
 function getRouterConfig() {
