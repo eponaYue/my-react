@@ -31,11 +31,19 @@ class Comp2 extends Component {
   }
 }
 
+const users = [
+  { name: 'epona', age: 17 },
+  { name: 'birdy', age: 23 },
+];
+
 const Vdom = (
-  <div>
+  <div id="func-dom" key='react-key' onClick={() => alert('react click')} style={{ color: 'red' }}>
     <span>hello, react core api</span>
     <Comp name="函数组件" />
     <Comp2 name="类组件" />
+    <ul>
+      {users.map(user => <li key={user.name}>{user.name}</li>)}
+    </ul>
   </div>
 );
 
@@ -43,5 +51,4 @@ console.log(Vdom);
 
 ReactDom.render(Vdom, document.querySelector("#root"))
 /*************************************************** */
-
 
